@@ -27,22 +27,22 @@
     }
 }
 
-.user__nav-list{
+.user-nav__list{
     display: flex;
-    &--search{
+    &-search{
         background-color: #edf1f4;
         padding: 18px;
         border-radius: 50%;
         margin-right: 21px;
     }
 
-    &--heart,
-    &--cart{
+    &-heart,
+    &-cart{
         position: relative;
         background-color: #fcd7b6;
     }
 
-    &--heart{
+    &-heart{
         border-top-left-radius: 30px;
         border-bottom-left-radius: 30px;
         padding: 22px 30px 12px 41px;
@@ -58,13 +58,13 @@
         }
     }
 
-    &--cart{
+    &-cart{
         border-top-right-radius: 30px;
         border-bottom-right-radius: 30px;
         padding: 21px 42px 13px 27px;
     }
 
-    &--matrix{
+    &-matrix{
         background-color: $main;
         padding: 15px;
         border-radius: 50%;
