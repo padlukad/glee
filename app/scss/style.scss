@@ -31,6 +31,9 @@
 .user-nav__list{
     display: flex;
     &-search{
+        display: flex;
+        justify-content: center;
+        align-items: center;
         background-color: #edf1f4;
         padding: 18px;
         border-radius: 50%;
