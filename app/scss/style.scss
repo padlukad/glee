@@ -21,7 +21,7 @@
         padding-left: 33px;
     }
     &__list-link{
-        color: $title;
+        color: #436372;
         font-size: 15px;
         line-height: 12px;
         @extend %rubik-500;
@@ -207,7 +207,8 @@
         margin-bottom: 40px;
         @extend %rubik-400;
         font-size: 18px;
-        color: $title;
+        line-height: 30px;
+        color: #436372;
     }
     &__item-link{
         display: inline-block;
@@ -310,11 +311,109 @@
     }
 }
 
+.title{
+    font-size: 36px;
+    @extend %dm-700;
+    color: $title;
+    text-align: center;
+    margin-bottom: 35px;
+}
 
+.products{
+    padding: 75px 50px;
+    &__top{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 80px;
+    }
+    &__btn{
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        @extend %dm-700;
+        color: $default;
+        padding: 0;
+        & + .products__btn{
+            margin-left: 30px;
+        }
+    }
+    .mixitup-control-active{
+        color: $title;
+    }
+    &__items{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-column-gap: 30px;
+    } 
+}
 
-
-
-
+.product-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 270px;
+    padding: 30px 5px 40px;
+    background-color: #fff;
+    box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
+    overflow: hidden;
+    margin-bottom: 40px;
+    &:hover{
+        .product-item__link-box{
+            transform: translateY(-200%);
+            bottom: auto;
+        }
+    }
+    &__img-box{
+        height: 220px;
+        min-width: 155px;
+        object-fit: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img{
+            display: block;
+        }
+    }
+    &__title{
+        @extend %dm-500;
+        color: #243f4d;
+        margin-bottom: 15px;
+    }
+    &__price{
+        color: $main;
+        @extend %dm-700;
+        text-align: center;
+    }
+    &__link-box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: translateY(400%);
+    }
+    &__box-link{
+        width: 45px;
+        height: 45px;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        background-color: #fff;
+        box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
+        border-radius: 50%;
+        transition: all .3s;
+        & + .product-item__box-link{
+            margin-left: 15px;
+        }
+        &:hover{
+            background-color: $main;
+            path{
+                fill: #fff;
+            }
+        }
+    }
+}
 
 
 
