@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container-big">
+            <div class="header__inner">
+                <a class="logo" href="#" >
+                    <img class="logo__img" src="images/logo.png" alt="logo">
+                </a>
+                <nav class="menu">
+                    <ul class="menu__list">
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" href="#">Home +</a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" href="#">About</a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" href="#">Services</a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" href="#">Pages +</a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" href="#">News</a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="user-nav">
+                    <div class="user-nav__item user-nav__search">
+                        <a class="user-nav__link" href="#">
+                            <svg width="16px" height="16px">
+                                <path fill-rule="evenodd"  fill="rgb(36, 63, 77)"
+                                d="M15.320,14.610 C14.899,15.63 13.327,16.24 11.590,14.318 L9.531,11.968 C8.751,12.313 7.890,12.506 6.983,12.506 C3.514,12.506 0.704,9.705 0.704,6.249 C0.704,2.793 3.511,0.3 6.980,0.3 C10.445,0.3 13.258,2.796 13.258,6.252 C13.258,7.182 13.56,8.64 12.691,8.857 L15.27,10.893 C16.730,12.639 15.772,14.159 15.320,14.610 ZM6.980,1.305 C4.238,1.305 2.14,3.521 2.14,6.252 C2.14,8.984 4.235,11.200 6.980,11.200 C9.721,11.200 11.945,8.984 11.945,6.252 C11.945,3.521 9.721,1.305 6.980,1.305 ZM14.178,11.865 L12.17,9.985 C11.633,10.498 11.175,10.952 10.654,11.325 L12.525,13.513 C12.819,13.836 13.651,14.380 14.406,13.739 C14.615,13.563 15.39,12.670 14.178,11.865 ZM6.493,10.84 C5.682,9.923 4.937,9.535 4.350,8.954 C3.767,8.372 3.377,7.626 3.215,6.818 C3.149,6.464 3.343,6.141 3.702,6.75 C4.57,6.10 4.381,6.206 4.447,6.560 C4.544,7.141 4.803,7.626 5.227,8.49 C5.648,8.437 6.169,8.726 6.721,8.826 C7.45,8.891 7.273,9.215 7.207,9.569 C7.142,9.892 6.849,10.125 6.493,10.84 Z"
+                                />
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="user-nav__item-wrapper">
+                        <div class="user-nav__item user-nav__heart">
+                            <a class="user-nav__link" href="#">
+                                <svg width="19px" height="17px">
+                                    <path fill-rule="evenodd"  fill="rgb(36, 63, 77)"
+                                        d="M9.912,16.244 C9.817,16.244 9.722,16.226 9.633,16.188 C9.280,16.38 0.983,12.438 0.983,5.428 C1.74,2.778 3.190,0.721 5.800,0.721 C7.544,0.721 9.66,1.639 9.912,3.31 C10.759,1.639 12.282,0.721 14.25,0.721 C16.634,0.721 18.750,2.778 18.842,5.404 C18.842,12.438 10.545,16.38 10.192,16.188 C10.103,16.226 10.8,16.244 9.912,16.244 ZM5.800,2.106 C3.954,2.106 2.457,3.575 2.392,5.452 C2.393,10.859 8.517,14.114 9.912,14.786 C11.308,14.114 17.433,10.856 17.433,5.428 C17.367,3.575 15.870,2.106 14.25,2.106 C12.180,2.106 10.682,3.575 10.617,5.452 C10.604,5.825 10.292,6.121 9.912,6.121 L9.912,6.121 C9.532,6.121 9.221,5.825 9.208,5.452 C9.143,3.575 7.646,2.106 5.800,2.106 Z"/>
+                                </svg>
+                                <span class="user-nav__num-heart">0</span>
+                            </a>
+                        </div>
+                        <div class="user-nav__item user-nav__cart">
+                            <a class="user-nav__link" href="#">
+                                <svg width="19px" height="17px">
+                                    <path fill-rule="evenodd"  fill="rgb(36, 63, 77)"
+                                    d="M18.935,3.932 L16.812,11.887 C16.743,12.146 16.508,12.327 16.240,12.327 L5.884,12.327 C5.876,12.325 5.868,12.325 5.862,12.327 C4.532,12.328 3.656,12.821 3.182,13.837 C3.82,14.51 2.868,14.178 2.645,14.178 C2.561,14.178 2.476,14.160 2.395,14.122 C2.98,13.983 1.970,13.631 2.109,13.335 C2.688,12.95 3.736,11.361 5.162,11.184 L4.107,5.793 C4.45,5.472 4.254,5.160 4.575,5.97 C4.896,5.31 5.206,5.245 5.270,5.565 L6.362,11.143 L15.785,11.143 L17.591,4.372 L4.314,4.372 C4.305,4.372 4.297,4.372 4.289,4.372 C2.161,4.372 0.321,2.788 0.6,0.679 C0.42,0.355 0.180,0.54 0.504,0.6 C0.819,0.48 1.129,0.180 1.177,0.505 C1.406,2.36 2.744,3.186 4.293,3.186 C4.298,3.186 4.305,3.186 4.310,3.186 L18.363,3.186 C18.547,3.186 18.720,3.272 18.832,3.418 C18.945,3.565 18.983,3.755 18.935,3.932 ZM5.527,12.830 C5.529,12.830 5.530,12.830 5.532,12.830 C6.83,12.830 6.602,13.44 6.993,13.433 C7.385,13.826 7.601,14.345 7.601,14.899 C7.603,15.740 7.102,16.493 6.325,16.816 C6.66,16.925 5.795,16.977 5.526,16.977 C4.989,16.977 4.462,16.767 4.64,16.371 C3.468,15.777 3.290,14.890 3.612,14.110 C3.934,13.334 4.685,12.830 5.527,12.830 ZM4.901,15.532 C5.156,15.786 5.537,15.862 5.869,15.724 C6.203,15.584 6.417,15.261 6.417,14.900 C6.417,14.663 6.324,14.441 6.156,14.272 C5.990,14.107 5.768,14.14 5.532,14.14 C5.530,14.14 5.529,14.14 5.528,14.14 C5.167,14.14 4.845,14.230 4.707,14.563 C4.569,14.896 4.645,15.278 4.901,15.532 ZM13.918,12.830 C14.464,12.790 14.998,13.48 15.386,13.434 C15.778,13.826 15.993,14.345 15.993,14.899 C15.996,15.739 15.495,16.493 14.718,16.816 C14.459,16.925 14.187,16.976 13.918,16.977 C13.381,16.977 12.854,16.767 12.456,16.371 C11.859,15.776 11.682,14.890 12.4,14.110 C12.325,13.334 13.76,12.830 13.918,12.830 ZM13.292,15.532 C13.549,15.788 13.931,15.862 14.262,15.724 C14.595,15.584 14.810,15.261 14.809,14.900 C14.809,14.663 14.716,14.441 14.549,14.272 C14.384,14.109 14.156,14.14 13.924,14.14 C13.923,14.14 13.922,14.14 13.922,14.14 C13.591,14.46 13.237,14.229 13.99,14.562 C12.961,14.896 13.37,15.278 13.292,15.532 Z"/>
+                                </svg>
+                                <span class="user-nav__num-cart">0</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="user-nav__item user-nav__matrix">
+                        <a class="user-nav__link " href="#">
+                            <svg width="21px" height="21px">
+                                <path fill-rule="evenodd"  fill="rgb(255, 255, 255)"
+                                d="M17.882,12.749 C16.696,12.749 15.736,11.789 15.736,10.603 C15.736,9.416 16.696,8.457 17.882,8.457 C19.69,8.457 20.28,9.416 20.28,10.603 C20.28,11.789 19.69,12.749 17.882,12.749 ZM17.882,4.880 C16.696,4.880 15.736,3.921 15.736,2.735 C15.736,1.548 16.696,0.589 17.882,0.589 C19.69,0.589 20.28,1.548 20.28,2.735 C20.28,3.921 19.69,4.880 17.882,4.880 ZM10.14,20.617 C8.827,20.617 7.868,19.658 7.868,18.472 C7.868,17.285 8.827,16.326 10.14,16.326 C11.201,16.326 12.160,17.285 12.160,18.472 C12.160,19.658 11.201,20.617 10.14,20.617 ZM10.14,12.749 C8.827,12.749 7.868,11.789 7.868,10.603 C7.868,9.416 8.827,8.457 10.14,8.457 C11.201,8.457 12.160,9.416 12.160,10.603 C12.160,11.789 11.201,12.749 10.14,12.749 ZM10.14,4.880 C8.827,4.880 7.868,3.921 7.868,2.735 C7.868,1.548 8.827,0.589 10.14,0.589 C11.201,0.589 12.160,1.548 12.160,2.735 C12.160,3.921 11.201,4.880 10.14,4.880 ZM2.145,20.617 C0.959,20.617 0.0,19.658 0.0,18.472 C0.0,17.285 0.959,16.326 2.145,16.326 C3.332,16.326 4.291,17.285 4.291,18.472 C4.291,19.658 3.332,20.617 2.145,20.617 ZM2.145,12.749 C0.959,12.749 0.0,11.789 0.0,10.603 C0.0,9.416 0.959,8.457 2.145,8.457 C3.332,8.457 4.291,9.416 4.291,10.603 C4.291,11.789 3.332,12.749 2.145,12.749 ZM2.145,4.880 C0.959,4.880 0.0,3.921 0.0,2.735 C0.0,1.548 0.959,0.589 2.145,0.589 C3.332,0.589 4.291,1.548 4.291,2.735 C4.291,3.921 3.332,4.880 2.145,4.880 ZM17.882,16.326 C19.69,16.326 20.28,17.285 20.28,18.472 C20.28,19.658 19.69,20.617 17.882,20.617 C16.696,20.617 15.736,19.658 15.736,18.472 C15.736,17.285 16.696,16.326 17.882,16.326 Z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="top">
+            <div class="container">
+                <div class="top__container" style="background-color: #edf1f4;">
+                    <h2 class="top__title">
+                        About Us
+                    </h2>
+                    <div class="breadcrumbs">
+                        <ul class="breadcrumbs__list">
+                            <li class="breadcrumbs__item">
+                                <a class="breadcrumbs__link" href="#">
+                                    Home
+                                </a>
+                            </li>
+                            <li class="breadcrumbs__item">
+                                <span>/</span>
+                            </li>
+                            <li class="breadcrumbs__item">
+                                <span>About Us</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="mission">
+            <div class="container">
+                <div class="mission__wrapper">
+                    <img class="mission__img" src="images/about/mission.jpg" alt="photo">
+                    <div class="mission__inner">
+                        <div class="mission__time">
+                            <div class="mission__time-number">
+                                12
+                            </div>
+                            <div class="mission__time-text">
+                                <p>Years</p> 
+                                <p>Experience</p> 
+                                <p>Working</p>
+                            </div>
+                        </div>
+                        <h4 class="mission__inner-title">
+                            Mission of our creative house
+                        </h4>
+                        <p class="mission__inner-text">
+                            consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                        </p>
+                        <div class="mission__numbers">
+                            <div class="mission__number-item">
+                                <div class="mission__number-title">
+                                    520+
+                                </div>
+                                <div class="mission__number-text">
+                                    Projects
+                                </div>
+                            </div>
+                            <div class="mission__number-item">
+                                <div class="mission__number-title">
+                                    $4M
+                                </div>
+                                <div class="mission__number-text">
+                                    Revenue
+                                </div>
+                            </div>
+                            <div class="mission__number-item">
+                                <div class="mission__number-title">
+                                    250
+                                </div>
+                                <div class="mission__number-text">
+                                    Awards
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="achievments">
+            <div class="container">
+                <ul class="achievments__list">
+                    <li class="achievments__item">
+                        <div class="achievments__img-box achievments__img-monitor">
+                            <img class="achievments__img" src="images/icons/monitor.svg" alt="achievement img">
+                        </div>
+                        <div class="achievments__number">
+                            99%
+                        </div>
+                        <div class="achievments__text">
+                            Satisﬁed Clients Rate
+                        </div>
+                    </li>
+                    <li class="achievments__item">
+                        <div class="achievments__img-box achievments__img-delivery">
+                            <img class="achievments__img" src="images/icons/delivery.svg" alt="achievement img">
+                        </div>
+                        <div class="achievments__number">
+                            5020+
+                        </div>
+                        <div class="achievments__text">
+                            Products Delivered
+                        </div>
+                    </li>
+                    <li class="achievments__item">
+                        <div class="achievments__img-box achievments__img-timephone">
+                            <img class="achievments__img" src="images/icons/time-phone.svg" alt="achievement img">
+                        </div>
+                        <div class="achievments__number">
+                            23hr
+                        </div>
+                        <div class="achievments__text">
+                            Daily Working Time
+                        </div>
+                    </li>
+                    <li class="achievments__item">
+                        <div class="achievments__img-box achievments__img-ribbon">
+                            <img class="achievments__img" src="images/icons/ribbon.svg" alt="achievement img">
+                        </div>
+                        <div class="achievments__number">
+                            140+
+                        </div>
+                        <div class="achievments__text">
+                            Brands in Store
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="team">
+            <div class="container">
+                <div class="team__inner">
+                    <div class="team__inner-about">
+                        <h4 class="team__about-title">
+                            Our Team
+                        </h4>
+                        <p class="team__about-text">
+                            Lorem ipsum dolor sit amet, conse ctetur adipi sicing elit, sed do eiusmod tempor inciLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                        </p>
+                        <a class="team__about-link" href="#">
+                            Join With US
+                        </a>
+                    </div>
+                    <div class="team__cards">
+                        <div class="team__member">
+                            <img class="team__member-img" src="images/team/1.jpg" alt="member photo">
+                            <div class="team__member-wrapper">
+                                <div class="team__member-info">
+                                    <div class="team__member-name">
+                                        Eliza Elliot
+                                    </div>
+                                    <div class="team__member-position">
+                                        Commodo tempor 
+                                    </div>
+                                </div>
+                                <div class="team__member-socials">
+                                    <a class="team__socials-link" href="#">
+                                        <svg width="18px" height="18px">
+                                            <path fill-rule="evenodd"  fill="rgb(136, 136, 136)"
+                                            d="M16.908,13.562 C16.374,15.523 15.95,16.683 13.110,17.1 C12.369,17.121 10.366,17.193 8.366,17.193 C6.319,17.193 4.275,17.117 3.588,16.939 C1.638,16.435 0.474,15.164 0.164,13.189 C0.66,11.739 0.90,4.999 0.327,3.535 C0.873,1.629 2.146,0.510 4.75,0.193 C4.949,0.50 6.658,0.0 8.385,0.0 C9.990,0.0 11.608,0.43 12.583,0.96 C13.764,0.158 14.845,0.538 15.723,1.381 C16.559,2.181 16.986,3.182 17.95,4.316 C17.223,5.668 17.306,12.63 16.908,13.562 ZM15.547,4.460 C15.393,2.948 14.468,1.953 12.972,1.719 C12.231,1.606 10.447,1.556 8.672,1.556 C6.960,1.556 5.255,1.603 4.505,1.684 C3.6,1.857 1.997,2.782 1.758,4.274 C1.511,5.855 1.514,11.767 1.698,12.955 C1.889,14.190 2.588,15.39 3.821,15.385 C4.488,15.572 6.487,15.639 8.446,15.639 C10.250,15.639 12.21,15.583 12.687,15.509 C14.201,15.344 15.201,14.411 15.441,12.906 C15.688,11.394 15.688,5.876 15.547,4.460 ZM13.208,5.54 C12.636,5.48 12.183,4.585 12.187,4.18 C12.192,3.450 12.651,2.989 13.218,2.989 L13.231,2.989 C13.798,2.989 14.256,3.452 14.252,4.25 C14.247,4.591 13.781,5.54 13.208,5.54 ZM8.562,13.9 C6.125,13.9 4.171,11.34 4.190,8.597 C4.209,6.159 6.199,4.184 8.636,4.191 C11.67,4.191 13.27,6.166 13.9,8.604 C12.990,11.34 11.0,13.9 8.562,13.9 ZM8.645,5.745 L8.620,5.745 C7.57,5.745 5.770,7.3 5.744,8.569 C5.719,10.144 6.972,11.435 8.547,11.448 L8.572,11.449 C10.135,11.449 11.422,10.190 11.448,8.625 C11.473,7.43 10.220,5.759 8.645,5.745 Z"/>
+                                        </svg>
+                                    </a>
+                                    <a class="team__socials-link" href="#">
+                                        <svg width="23px" height="15px">
+                                            <path fill-rule="evenodd"  fill="rgb(136, 136, 136)"
+                                            d="M22.691,5.834 L22.690,5.903 L22.676,7.720 L22.676,7.796 L22.600,7.796 L20.170,7.796 L20.151,10.226 L20.151,10.296 L20.81,10.296 L18.258,10.296 L18.189,10.296 L18.190,10.226 L18.208,7.796 L15.778,7.796 L15.702,7.796 L15.702,7.720 L15.716,5.903 L15.717,5.834 L15.793,5.834 L18.223,5.834 L18.242,3.397 L18.242,3.328 L18.311,3.328 L20.135,3.328 L20.203,3.328 L20.203,3.397 L20.184,5.834 L22.615,5.834 L22.691,5.834 ZM9.107,14.114 C8.468,14.279 7.820,14.360 7.168,14.360 C7.29,14.360 6.890,14.356 6.751,14.349 C5.342,14.266 4.61,13.824 2.928,12.989 C1.465,11.912 0.544,10.475 0.157,8.700 C0.17,8.58 0.32,7.416 0.20,6.767 C0.121,5.234 0.657,3.859 1.639,2.665 C2.657,1.414 3.954,0.600 5.505,0.207 C5.898,0.103 6.293,0.41 6.694,0.20 C6.921,0.13 7.150,0.0 7.378,0.0 C8.593,0.13 9.731,0.317 10.775,0.932 C11.476,1.332 11.874,1.739 12.45,1.864 C11.329,2.568 10.640,3.259 9.937,3.949 C9.416,3.500 8.839,3.86 7.839,2.934 C7.632,2.904 7.427,2.889 7.226,2.889 C5.219,2.889 3.537,4.340 3.90,6.242 C2.983,6.669 2.952,7.105 2.990,7.540 C3.143,9.308 4.326,10.758 5.925,11.276 C6.332,11.404 6.754,11.465 7.178,11.465 C7.278,11.465 7.377,11.462 7.477,11.456 C8.230,11.407 8.935,11.207 9.574,10.786 C10.650,10.54 10.997,8.907 11.0,8.624 L7.153,8.624 C7.154,8.530 7.168,6.732 7.174,5.855 L7.182,5.738 L13.935,5.738 C14.299,7.844 13.972,10.60 12.660,11.794 C11.754,12.989 10.546,13.742 9.107,14.114 Z"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team__member">
+                            <img class="team__member-img" src="images/team/2.jpg" alt="member photo">
+                            <div class="team__member-wrapper">
+                                <div class="team__member-info">
+                                    <div class="team__member-name">
+                                        Roscoe A.
+                                    </div>
+                                    <div class="team__member-position">
+                                        Commodo tempor 
+                                    </div>
+                                </div>
+                                <div class="team__member-socials">
+                                    <a class="team__socials-link" href="#">
+                                        <svg width="18px" height="18px">
+                                            <path fill-rule="evenodd"  fill="rgb(136, 136, 136)"
+                                            d="M16.908,13.562 C16.374,15.523 15.95,16.683 13.110,17.1 C12.369,17.121 10.366,17.193 8.366,17.193 C6.319,17.193 4.275,17.117 3.588,16.939 C1.638,16.435 0.474,15.164 0.164,13.189 C0.66,11.739 0.90,4.999 0.327,3.535 C0.873,1.629 2.146,0.510 4.75,0.193 C4.949,0.50 6.658,0.0 8.385,0.0 C9.990,0.0 11.608,0.43 12.583,0.96 C13.764,0.158 14.845,0.538 15.723,1.381 C16.559,2.181 16.986,3.182 17.95,4.316 C17.223,5.668 17.306,12.63 16.908,13.562 ZM15.547,4.460 C15.393,2.948 14.468,1.953 12.972,1.719 C12.231,1.606 10.447,1.556 8.672,1.556 C6.960,1.556 5.255,1.603 4.505,1.684 C3.6,1.857 1.997,2.782 1.758,4.274 C1.511,5.855 1.514,11.767 1.698,12.955 C1.889,14.190 2.588,15.39 3.821,15.385 C4.488,15.572 6.487,15.639 8.446,15.639 C10.250,15.639 12.21,15.583 12.687,15.509 C14.201,15.344 15.201,14.411 15.441,12.906 C15.688,11.394 15.688,5.876 15.547,4.460 ZM13.208,5.54 C12.636,5.48 12.183,4.585 12.187,4.18 C12.192,3.450 12.651,2.989 13.218,2.989 L13.231,2.989 C13.798,2.989 14.256,3.452 14.252,4.25 C14.247,4.591 13.781,5.54 13.208,5.54 ZM8.562,13.9 C6.125,13.9 4.171,11.34 4.190,8.597 C4.209,6.159 6.199,4.184 8.636,4.191 C11.67,4.191 13.27,6.166 13.9,8.604 C12.990,11.34 11.0,13.9 8.562,13.9 ZM8.645,5.745 L8.620,5.745 C7.57,5.745 5.770,7.3 5.744,8.569 C5.719,10.144 6.972,11.435 8.547,11.448 L8.572,11.449 C10.135,11.449 11.422,10.190 11.448,8.625 C11.473,7.43 10.220,5.759 8.645,5.745 Z"/>
+                                        </svg>
+                                    </a>
+                                    <a class="team__socials-link" href="#">
+                                        <svg width="23px" height="15px">
+                                            <path fill-rule="evenodd"  fill="rgb(136, 136, 136)"
+                                            d="M22.691,5.834 L22.690,5.903 L22.676,7.720 L22.676,7.796 L22.600,7.796 L20.170,7.796 L20.151,10.226 L20.151,10.296 L20.81,10.296 L18.258,10.296 L18.189,10.296 L18.190,10.226 L18.208,7.796 L15.778,7.796 L15.702,7.796 L15.702,7.720 L15.716,5.903 L15.717,5.834 L15.793,5.834 L18.223,5.834 L18.242,3.397 L18.242,3.328 L18.311,3.328 L20.135,3.328 L20.203,3.328 L20.203,3.397 L20.184,5.834 L22.615,5.834 L22.691,5.834 ZM9.107,14.114 C8.468,14.279 7.820,14.360 7.168,14.360 C7.29,14.360 6.890,14.356 6.751,14.349 C5.342,14.266 4.61,13.824 2.928,12.989 C1.465,11.912 0.544,10.475 0.157,8.700 C0.17,8.58 0.32,7.416 0.20,6.767 C0.121,5.234 0.657,3.859 1.639,2.665 C2.657,1.414 3.954,0.600 5.505,0.207 C5.898,0.103 6.293,0.41 6.694,0.20 C6.921,0.13 7.150,0.0 7.378,0.0 C8.593,0.13 9.731,0.317 10.775,0.932 C11.476,1.332 11.874,1.739 12.45,1.864 C11.329,2.568 10.640,3.259 9.937,3.949 C9.416,3.500 8.839,3.86 7.839,2.934 C7.632,2.904 7.427,2.889 7.226,2.889 C5.219,2.889 3.537,4.340 3.90,6.242 C2.983,6.669 2.952,7.105 2.990,7.540 C3.143,9.308 4.326,10.758 5.925,11.276 C6.332,11.404 6.754,11.465 7.178,11.465 C7.278,11.465 7.377,11.462 7.477,11.456 C8.230,11.407 8.935,11.207 9.574,10.786 C10.650,10.54 10.997,8.907 11.0,8.624 L7.153,8.624 C7.154,8.530 7.168,6.732 7.174,5.855 L7.182,5.738 L13.935,5.738 C14.299,7.844 13.972,10.60 12.660,11.794 C11.754,12.989 10.546,13.742 9.107,14.114 Z"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team__member">
+                            <img class="team__member-img" src="images/team/3.jpg" alt="member photo">
+                            <div class="team__member-wrapper">
+                                <div class="team__member-info">
+                                    <div class="team__member-name">
+                                        Ruby M.
+                                    </div>
+                                    <div class="team__member-position">
+                                        Commodo tempor 
+                                    </div>
+                                </div>
+                                <div class="team__member-socials">
+                                    <a class="team__socials-link" href="#">
+                                        <svg width="18px" height="18px">
+                                            <path fill-rule="evenodd"  fill="rgb(136, 136, 136)"
+                                            d="M16.908,13.562 C16.374,15.523 15.95,16.683 13.110,17.1 C12.369,17.121 10.366,17.193 8.366,17.193 C6.319,17.193 4.275,17.117 3.588,16.939 C1.638,16.435 0.474,15.164 0.164,13.189 C0.66,11.739 0.90,4.999 0.327,3.535 C0.873,1.629 2.146,0.510 4.75,0.193 C4.949,0.50 6.658,0.0 8.385,0.0 C9.990,0.0 11.608,0.43 12.583,0.96 C13.764,0.158 14.845,0.538 15.723,1.381 C16.559,2.181 16.986,3.182 17.95,4.316 C17.223,5.668 17.306,12.63 16.908,13.562 ZM15.547,4.460 C15.393,2.948 14.468,1.953 12.972,1.719 C12.231,1.606 10.447,1.556 8.672,1.556 C6.960,1.556 5.255,1.603 4.505,1.684 C3.6,1.857 1.997,2.782 1.758,4.274 C1.511,5.855 1.514,11.767 1.698,12.955 C1.889,14.190 2.588,15.39 3.821,15.385 C4.488,15.572 6.487,15.639 8.446,15.639 C10.250,15.639 12.21,15.583 12.687,15.509 C14.201,15.344 15.201,14.411 15.441,12.906 C15.688,11.394 15.688,5.876 15.547,4.460 ZM13.208,5.54 C12.636,5.48 12.183,4.585 12.187,4.18 C12.192,3.450 12.651,2.989 13.218,2.989 L13.231,2.989 C13.798,2.989 14.256,3.452 14.252,4.25 C14.247,4.591 13.781,5.54 13.208,5.54 ZM8.562,13.9 C6.125,13.9 4.171,11.34 4.190,8.597 C4.209,6.159 6.199,4.184 8.636,4.191 C11.67,4.191 13.27,6.166 13.9,8.604 C12.990,11.34 11.0,13.9 8.562,13.9 ZM8.645,5.745 L8.620,5.745 C7.57,5.745 5.770,7.3 5.744,8.569 C5.719,10.144 6.972,11.435 8.547,11.448 L8.572,11.449 C10.135,11.449 11.422,10.190 11.448,8.625 C11.473,7.43 10.220,5.759 8.645,5.745 Z"/>
+                                        </svg>
+                                    </a>
+                                    <a class="team__socials-link" href="#">
+                                        <svg width="23px" height="15px">
+                                            <path fill-rule="evenodd"  fill="rgb(136, 136, 136)"
+                                            d="M22.691,5.834 L22.690,5.903 L22.676,7.720 L22.676,7.796 L22.600,7.796 L20.170,7.796 L20.151,10.226 L20.151,10.296 L20.81,10.296 L18.258,10.296 L18.189,10.296 L18.190,10.226 L18.208,7.796 L15.778,7.796 L15.702,7.796 L15.702,7.720 L15.716,5.903 L15.717,5.834 L15.793,5.834 L18.223,5.834 L18.242,3.397 L18.242,3.328 L18.311,3.328 L20.135,3.328 L20.203,3.328 L20.203,3.397 L20.184,5.834 L22.615,5.834 L22.691,5.834 ZM9.107,14.114 C8.468,14.279 7.820,14.360 7.168,14.360 C7.29,14.360 6.890,14.356 6.751,14.349 C5.342,14.266 4.61,13.824 2.928,12.989 C1.465,11.912 0.544,10.475 0.157,8.700 C0.17,8.58 0.32,7.416 0.20,6.767 C0.121,5.234 0.657,3.859 1.639,2.665 C2.657,1.414 3.954,0.600 5.505,0.207 C5.898,0.103 6.293,0.41 6.694,0.20 C6.921,0.13 7.150,0.0 7.378,0.0 C8.593,0.13 9.731,0.317 10.775,0.932 C11.476,1.332 11.874,1.739 12.45,1.864 C11.329,2.568 10.640,3.259 9.937,3.949 C9.416,3.500 8.839,3.86 7.839,2.934 C7.632,2.904 7.427,2.889 7.226,2.889 C5.219,2.889 3.537,4.340 3.90,6.242 C2.983,6.669 2.952,7.105 2.990,7.540 C3.143,9.308 4.326,10.758 5.925,11.276 C6.332,11.404 6.754,11.465 7.178,11.465 C7.278,11.465 7.377,11.462 7.477,11.456 C8.230,11.407 8.935,11.207 9.574,10.786 C10.650,10.54 10.997,8.907 11.0,8.624 L7.153,8.624 C7.154,8.530 7.168,6.732 7.174,5.855 L7.182,5.738 L13.935,5.738 C14.299,7.844 13.972,10.60 12.660,11.794 C11.754,12.989 10.546,13.742 9.107,14.114 Z"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team__member">
+                            <img class="team__member-img" src="images/team/4.jpg" alt="member photo">
+                            <div class="team__member-wrapper">
+                                <div class="team__member-info">
+                                    <div class="team__member-name">
+                                        Marie F. Bloss
+                                    </div>
+                                    <div class="team__member-position">
+                                        Commodo tempor 
+                                    </div>
+                                </div>
+                                <div class="team__member-socials">
+                                    <a class="team__socials-link" href="#">
+                                        <svg width="18px" height="18px">
+                                            <path fill-rule="evenodd"  fill="rgb(136, 136, 136)"
+                                            d="M16.908,13.562 C16.374,15.523 15.95,16.683 13.110,17.1 C12.369,17.121 10.366,17.193 8.366,17.193 C6.319,17.193 4.275,17.117 3.588,16.939 C1.638,16.435 0.474,15.164 0.164,13.189 C0.66,11.739 0.90,4.999 0.327,3.535 C0.873,1.629 2.146,0.510 4.75,0.193 C4.949,0.50 6.658,0.0 8.385,0.0 C9.990,0.0 11.608,0.43 12.583,0.96 C13.764,0.158 14.845,0.538 15.723,1.381 C16.559,2.181 16.986,3.182 17.95,4.316 C17.223,5.668 17.306,12.63 16.908,13.562 ZM15.547,4.460 C15.393,2.948 14.468,1.953 12.972,1.719 C12.231,1.606 10.447,1.556 8.672,1.556 C6.960,1.556 5.255,1.603 4.505,1.684 C3.6,1.857 1.997,2.782 1.758,4.274 C1.511,5.855 1.514,11.767 1.698,12.955 C1.889,14.190 2.588,15.39 3.821,15.385 C4.488,15.572 6.487,15.639 8.446,15.639 C10.250,15.639 12.21,15.583 12.687,15.509 C14.201,15.344 15.201,14.411 15.441,12.906 C15.688,11.394 15.688,5.876 15.547,4.460 ZM13.208,5.54 C12.636,5.48 12.183,4.585 12.187,4.18 C12.192,3.450 12.651,2.989 13.218,2.989 L13.231,2.989 C13.798,2.989 14.256,3.452 14.252,4.25 C14.247,4.591 13.781,5.54 13.208,5.54 ZM8.562,13.9 C6.125,13.9 4.171,11.34 4.190,8.597 C4.209,6.159 6.199,4.184 8.636,4.191 C11.67,4.191 13.27,6.166 13.9,8.604 C12.990,11.34 11.0,13.9 8.562,13.9 ZM8.645,5.745 L8.620,5.745 C7.57,5.745 5.770,7.3 5.744,8.569 C5.719,10.144 6.972,11.435 8.547,11.448 L8.572,11.449 C10.135,11.449 11.422,10.190 11.448,8.625 C11.473,7.43 10.220,5.759 8.645,5.745 Z"/>
+                                        </svg>
+                                    </a>
+                                    <a class="team__socials-link" href="#">
+                                        <svg width="23px" height="15px">
+                                            <path fill-rule="evenodd"  fill="rgb(136, 136, 136)"
+                                            d="M22.691,5.834 L22.690,5.903 L22.676,7.720 L22.676,7.796 L22.600,7.796 L20.170,7.796 L20.151,10.226 L20.151,10.296 L20.81,10.296 L18.258,10.296 L18.189,10.296 L18.190,10.226 L18.208,7.796 L15.778,7.796 L15.702,7.796 L15.702,7.720 L15.716,5.903 L15.717,5.834 L15.793,5.834 L18.223,5.834 L18.242,3.397 L18.242,3.328 L18.311,3.328 L20.135,3.328 L20.203,3.328 L20.203,3.397 L20.184,5.834 L22.615,5.834 L22.691,5.834 ZM9.107,14.114 C8.468,14.279 7.820,14.360 7.168,14.360 C7.29,14.360 6.890,14.356 6.751,14.349 C5.342,14.266 4.61,13.824 2.928,12.989 C1.465,11.912 0.544,10.475 0.157,8.700 C0.17,8.58 0.32,7.416 0.20,6.767 C0.121,5.234 0.657,3.859 1.639,2.665 C2.657,1.414 3.954,0.600 5.505,0.207 C5.898,0.103 6.293,0.41 6.694,0.20 C6.921,0.13 7.150,0.0 7.378,0.0 C8.593,0.13 9.731,0.317 10.775,0.932 C11.476,1.332 11.874,1.739 12.45,1.864 C11.329,2.568 10.640,3.259 9.937,3.949 C9.416,3.500 8.839,3.86 7.839,2.934 C7.632,2.904 7.427,2.889 7.226,2.889 C5.219,2.889 3.537,4.340 3.90,6.242 C2.983,6.669 2.952,7.105 2.990,7.540 C3.143,9.308 4.326,10.758 5.925,11.276 C6.332,11.404 6.754,11.465 7.178,11.465 C7.278,11.465 7.377,11.462 7.477,11.456 C8.230,11.407 8.935,11.207 9.574,10.786 C10.650,10.54 10.997,8.907 11.0,8.624 L7.153,8.624 C7.154,8.530 7.168,6.732 7.174,5.855 L7.182,5.738 L13.935,5.738 C14.299,7.844 13.972,10.60 12.660,11.794 C11.754,12.989 10.546,13.742 9.107,14.114 Z"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="articles">
+            <div class="container">
+                <div class="articles__top">
+                    <h3 class="title articles__top-title">
+                        Our Insights & Articles
+                    </h3>
+                    <a class="articles__top-link" href="#">
+                        View All
+                    </a>
+                </div>
+                <div class="articles__items">
+                    <div class="articles-item">
+                        <div class="articles-item__img-box">
+                            <img class="articles-item__img" src="images/articles/1.jpg" alt="article image">
+                        </div>
+                        <div class="articles-item__summary">
+                            <div class="articles-item__text">
+                                <a class="articles-item__link" href="#">
+                                    Diusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+                                </a>                                    
+                            </div>
+                            <div class="articles-item__info">
+                                <div class="articles-item__info-date">
+                                    28 JANUARY, 2020
+                                </div>
+                                <a class="articles-item__info-author">
+                                    BY ADMIN
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="articles-item">
+                        <div class="articles-item__img-box">
+                            <img class="articles-item__img" src="images/articles/2.jpg" alt="article image">
+                        </div>
+                        <div class="articles-item__summary">
+                            <div class="articles-item__text">
+                                <a class="articles-item__link" href="#">
+                                    Aonsectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore 
+                                </a>    
+                            </div>
+                            <div class="articles-item__info">
+                                <div class="articles-item__info-date">
+                                    28 JANUARY, 2020
+                                </div>
+                                <a class="articles-item__info-author">
+                                       BY ADMIN                                    
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="articles-item">
+                        <div class="articles-item__img-box">
+                            <img class="articles-item__img" src="images/articles/3.jpg" alt="article image">
+                        </div>
+                        <div class="articles-item__summary">
+                            <div class="articles-item__text">
+                                <a class="articles-item__link" href="#">
+                                    Rncididunt ut labore et dolore magna aliqua. Ut enim
+                                </a>   
+                            </div>    
+                            <div class="articles-item__info">
+                                <div class="articles-item__info-date">
+                                    28 JANUARY, 2020
+                                </div>
+                                <a class="articles-item__info-author">
+                                    BY ADMIN
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="partners">
+                    <ul class="partners__list">
+                        <li class="partners__item">
+                            <img src="images/partners/1.png" alt="partner logo">
+                        </li>
+                        <li class="partners__item">
+                            <img src="images/partners/2.png" alt="partner logo">
+                        </li>
+                        <li class="partners__item">
+                            <img src="images/partners/3.png" alt="partner logo">
+                        </li>
+                        <li class="partners__item">
+                            <img src="images/partners/4.png" alt="partner logo">
+                        </li>
+                        <li class="partners__item">
+                            <img src="images/partners/5.png" alt="partner logo">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-top__item footer-top__contact">
+                    <a class="logo footer-top__logo" href="#">
+                        <img class="logo__img" src="images/logo.png" alt="logo">
+                    </a>
+                    <a class="footer-top__adress" href="#">
+                        ADDRESS: 4772 Wines Lane
+                        Houston, TX 77032
+                    </a>
+                    <a class="footer-top__phone" href="tel:+832 347 5843">
+                        Telephone: +832-347-5843
+                    </a>
+                    <a class="footer-top__email" href="mailto:contact@Glee.com">
+                        Email: contact@Glee.com
+                    </a>
+                </div>
+                <div class="footer-top__item footer-top__services">
+                    <h6 class="footer-top__title">
+                        Services
+                    </h6>
+                    <ul class="footer-top__list">
+                        <li class="footer-top__list-item">
+                            <a class="footer-top__list-link" href="#">
+                                About us
+                            </a> 
+                        </li>
+                        <li class="footer-top__list-item">
+                            <a class="footer-top__list-link" href="#">
+                                Return Policy
+                            </a> 
+                        </li>
+                        <li class="footer-top__list-item">
+                            <a class="footer-top__list-link" href="#">
+                                Our Blog
+                            </a> 
+                        </li>
+                        <li class="footer-top__list-item">
+                            <a class="footer-top__list-link" href="#">
+                                Contact Us
+                            </a> 
+                        </li>
+                        <li class="footer-top__list-item">
+                            <a class="footer-top__list-link" href="#">
+                               Terms & Condition 
+                            </a> 
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-top__item footer-top__account">
+                    <h6 class="footer-top__title">
+                        Account
+                    </h6>
+                    <ul class="footer-top__list">
+                        <li class="footer-top__list-item">
+                            <a class="footer-top__list-link" href="#">
+                                Your Account
+                            </a> 
+                        </li>
+                        <li class="footer-top__list-item">
+                            <a class="footer-top__list-link" href="#">
+                                Checkout
+                            </a> 
+                        </li>
+                        <li class="footer-top__list-item">
+                            <a class="footer-top__list-link" href="#">
+                               Login 
+                            </a> 
+                        </li>
+                        <li class="footer-top__list-item">
+                            <a class="footer-top__list-link" href="#">
+                                Register
+                            </a> 
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-top__item footer-top__item-form">
+                    <h6 class="footer-top__title">
+                        newsletter
+                    </h6>
+                    <p class="footer-top__form-text">
+                        Subscribe by our newsletter and get
+                        update protidin.
+                    </p>
+                    <form class="footer-top__form" action="#">
+                        <input class="footer-top__form-input" type="email" placeholder="Email address">
+                        <button class="footer-top__btn" type="submit" required>
+                            Subscribe
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-bottom__copy">
+                    ©2020 CopyRight Example. All rights reserved. 
+                </p>
+                <div class="footer-bottom__links">
+                    <a class="footer-bottom__link" href="#">
+                        Home
+                    </a>
+                    <span>|</span>
+                    <a class="footer-bottom__link" href="#">
+                        About                       
+                    </a>
+                    <span>|</span>
+                    <a class="footer-bottom__link" href="#">
+                        Blog                       
+                    </a>
+                    <span>|</span>
+                    <a class="footer-bottom__link" href="#">
+                        Contact
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/main.min.js"></script>
+</body>
+</html>

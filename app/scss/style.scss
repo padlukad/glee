@@ -67,7 +67,7 @@
         position: absolute;
         width: 1px;
         height: 32px;
-        color: #fde7d3;
+        background-color: #fde7d3;
         right: 0;
         top: -10px;
         z-index: 99999999;
@@ -760,10 +760,247 @@
     }
 }
 
+.mission{
+    padding-bottom: 120px;
+    &__wrapper{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 30px;
+    }
+    &__img{
+        display: block;
+        width: 100%;
+    }
+    &__inner{
+        padding: 60px 0 65px 40px;
+    }
+    &__time{
+        display: flex;
+        align-items: center;
+    }
+    &__time-number{
+        font-size: 140px;
+        @extend %dm-700;
+        color: $main;
+        margin-right: 30px;
+    }
+    &__time-text{
+        @extend %rubik-400;
+        color: $accent;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        p{
+            padding-top: 20px;
+        }
+        margin-bottom: 10px;
+    }
+    &__inner-title{
+        font-size: 36px;
+        @extend %dm-700;
+        color: $accent;
+        margin-bottom: 50px;
+    }
+    &__inner-text{
+        color: $accent;
+        @extend %rubik-400;
+        line-height: 30px;
+        padding-bottom: 55px;
+        border-bottom: 1px solid #e6eaf0;
+        margin-bottom: 40px;
+    }
+    &__numbers{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__number-item{
+        padding: 0 20px 0 70px;
+        border-right: 1px solid #e6eaf0;
+        position: relative;
+        &:last-child{
+            border-right: none;
+        }
+        &:last-child::before{
+            content: '';
+            position: absolute;
+            width: 43px;
+            height: 42px;
+            background-image: url('../images/icons/medal.svg');
+            left: 0;
+            top: 10px;
+        }
+        &:first-child::before{
+            content: '';
+            position: absolute;
+            width: 37px;
+            height: 38px;
+            background-image: url('../images/icons/notepad.svg');
+            left: 0;
+            top: 10px;
+        }
+        &:nth-child(2)::before{
+            content: '';
+            position: absolute;
+            width: 44px;
+            height: 40px;
+            background-image: url('../images/icons/rupor.svg');
+            left: 0;
+            top: 10px;
+        }
+    }
+    &__number-title{
+        font-size: 36px;
+        @extend %dm-700;
+        color: $accent;
+    }
+    &__number-text{
+        color: #4c4c4c;
+        @extend %dm-700;
+    }
+}
 
+.achievments{
+    padding: 85px 0 80px;
+    background-color: #fcd7b6;
+    &__list{
+        display: flex;
+        justify-content: space-around;
+    }
+    &__item{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    &__img-box{       
+        padding: 0 32px;
+        position: relative; 
+        &::before{
+            content:'';
+            position: absolute;
+            width: 32px;
+            height: 32px;
+            background-color: $main;
+            border-radius: 50%;
+            opacity: 0.5;  
+            right: 20px;
+            bottom: -5px;           
+        }  
+    } 
+    &__img-delivery::before{
+        right: 25px;
+        bottom: -10px;
+    }
+    &__img-timephone::before{
+        right: 25px;
+        bottom: 0;
+    }
+    &__img-ribbon::before{
+        right: 25px;
+        bottom: 0;
+    }
+    &__number{
+        @extend %dm-700;
+        font-size: 36px;
+        color: $accent;
+        margin: 25px 0;
+    }
+    &__text{
+        @extend %dm-700;
+        font-size: 18px;
+        color: $accent;
+    }
+}
 
-
-
-
+.team{
+    padding: 120px 0 75px;
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__inner-about{
+        max-width: 300px;
+        color: $accent;
+    }
+    &__about-title{
+        @extend %dm-700;
+        font-size: 36px;
+        margin-bottom: 30px;
+    }
+    &__about-text{
+        line-height: 30px;
+        margin-bottom: 30px;
+    }
+    &__about-link{
+        background-color: $main;
+        color: #fff;
+        font-size: 15px;
+        @extend %pop-700;
+        padding: 17px 70px 17px 20px;
+        border-radius: 5px;
+        position: relative;
+        &::after{
+            content:'';
+            position: absolute;
+            width: 22px;
+            height: 9px;
+            background-image: url('../images/icons/right-arrow.svg');
+            right: 22px;
+            bottom: 20px;
+        }
+    }
+    &__cards{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 30px;
+    }
+    &__member{
+        margin-bottom: 100px;
+    }
+    &__member-wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 28px 25px;
+        width: 325px;
+        height: 110px;
+        margin-top: -48px;
+        background-color: #fff;
+        box-shadow: 0px 6px 57px 0px rgba(37, 37, 37, 0.05);
+        position: absolute;
+        z-index: 10;     
+    }
+    &__member-img{
+        display: block;
+        width: 370px;
+        height: 320px;
+        object-fit: cover;
+        position: relative;
+        z-index: 1;
+    }
+    &__member-name{
+        font-size: 22px;
+        @extend %dm-700;
+        color: $accent;
+        margin-bottom: 20px;
+    }
+    &__member-position{
+        color: #565872;
+        @extend %rubik-400;
+    }
+    &__member-socials{
+        display: flex;
+    }
+    &__socials-link{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 5px;
+        border-radius: 50%;
+        background-color: #f6f6f6;
+        width: 42px;
+        height: 42px;
+    }
+}
 
 @import 'media';
