@@ -28,51 +28,60 @@
     }
 }
 
-.user-nav__list{
+.user-nav{       
     display: flex;
-    &-search{
+    &__item{
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: center;  
+    }
+    &__link{
+        display: inline-block;
+    }
+    &__search{
+        width: 51px;
+        height: 51px; 
+        border-radius: 50%;
         background-color: #edf1f4;
-        padding: 18px;
-        border-radius: 50%;
-        margin-right: 21px;
+        margin-right: 20px;
     }
-    &-heart,
-    &-cart{
-        position: relative;
-        background-color: #fcd7b6;
-    }
-    &-heart{
-        border-top-left-radius: 30px;
-        border-bottom-left-radius: 30px;
-        padding: 22px 30px 12px 41px;
-    }
-    &-cart{
-        border-top-right-radius: 30px;
+    &__item-wrapper{
         border-bottom-right-radius: 30px;
-        padding: 21px 42px 13px 27px;
-        &::before{
-            content: '';
-            position: absolute;
-            height: 32px;
-            width: 1px;
-            color: #fde7d3;
-            z-index: 2;
-            top: 12px;
-            left: 0px;
-        }
+        border-top-right-radius: 30px;
+        border-bottom-left-radius: 30px;
+        border-top-left-radius: 30px;
+        background-color: #fcd7b6;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        height: 51px;
+        padding: 0 15px 10px;
     }
-    &-matrix{
-        background-color: $main;
-        padding: 15px;
+    &__heart,
+    &__cart{
+        position: relative; 
+        padding: 0 20px;    
+    }
+    &__heart::after{
+        content:'';
+        position: absolute;
+        width: 1px;
+        height: 32px;
+        color: #fde7d3;
+        right: 0;
+        top: -10px;
+        z-index: 99999999;
+    }
+   
+    &__matrix{
+        width: 51px;
+        height: 51px; 
         border-radius: 50%;
-        margin-left: 18px;
+        background-color: $main;
+        margin-left: 20px;
     }
-
-    .user__num-heart,
-    .user__num-cart{
+    &__num-heart,
+    &__num-cart{
         position: absolute;
         width: 16px;
         height: 16px;
@@ -82,18 +91,10 @@
         border-radius: 50%;
         font-size: 10px;
         line-height: 18px; 
-    }
-
-    .user__num-heart{
-        top: 12px;
-        right: 21px;
-    }
-
-    .user__num-cart{
-        top: 13px;
-        right: 28px;
-    }
-}    
+        top: -7px;
+        right: 10px;
+    }  
+}
    
 
     
