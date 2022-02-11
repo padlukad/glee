@@ -25,3 +25,57 @@ body{
     margin: 0 auto;
     padding: 0 15px;
 }
+
+.breadcrumbs{
+    &__list{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @extend %rubik-400;
+        font-size: 14px;
+        color: #222933;
+    }
+    &__link{
+        @extend %rubik-400;
+        font-size: 14px;
+        color: #222933;
+    }
+    &__item + .breadcrumbs__item {
+        margin-left: 8px;
+    }
+}
+
+.pagination{
+    display: flex;
+    padding-top: 60px;
+    &__list{
+        display: flex;
+    }
+    &__item{
+        padding-right: 15px;
+    }
+    &__item-link{
+        background-color: #fff;
+        color: $accent;
+        border: 1px solid $accent;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__item-link--active{
+        background-color: $accent;
+        color: #fff;
+    }
+    &__next{
+        background-color: #fff;
+        color: $accent;
+        border: 1px solid $accent;
+        width: 73px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
