@@ -1,5 +1,23 @@
 $(function() {
 
+    $('.product-one__num').styler();
+
+    $('.product-slider__thumb').slick({
+        asNavFor: '.product-slider__big',
+        focusOnSelect: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        vertical: true,
+        draggable: false
+    });
+
+    $('.product-slider__big').slick({
+        asNavFor: '.product-slider__thumb',
+        draggable: false,
+        arrows: false,
+        fade: true
+    });
+
     $(".filter-price__input").ionRangeSlider({
         type: "double",
         prefix: "$",

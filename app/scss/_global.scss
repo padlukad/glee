@@ -79,3 +79,17 @@ body{
         align-items: center;
     }
 }
+
+.product-price{
+    font-size: 30px;
+    color: #333333;
+    @extend %rubik-400;
+    margin: 30px 0;
+}
+
+.content-title{
+    font-size: 40px;
+    color: #333333;
+    @extend %rubik-400;
+    margin-bottom: 25px;
+}
