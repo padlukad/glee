@@ -1444,6 +1444,162 @@
     }
 }
 
+.blog{
+    padding-bottom: 120px;
+    &__wrapper{
+        display: flex;
+    }
+    &__content{
+        margin-right: 70px;
+    }
+}
+.blog-item{
+    margin-bottom: 50px;
+    &:last-child{
+        margin-bottom: 10px;
+    }
+    &__img-box{
+        width: 830px;
+        height: 501px;
+        position: relative;
+        margin-bottom: 40px;
+    }
+    &__img{
+        width: 100%;
+        height: 100%;
+    }
+    &__img-info{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 276px;
+        height: 70px;
+        background-color: $main;
+        color: #fff;
+        font-size: 12px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-transform: uppercase;
+    }
+    &__img-date{
+        margin-right: 20px;
+        padding-left: 20px;
+        position: relative;
+        &::before{
+            content: '';
+            position: absolute;
+            width: 12px;
+            height: 14px;
+            background-image: url('../images/icons/calendar-solid.svg');
+            left: 0;
+            top: 0;
+        }      
+    }
+    &__img-author{
+        padding-left: 20px;
+        position: relative;
+        a{
+            color: #fff;
+        }
+        &::before{
+            content: '';
+            position: absolute;
+            width: 12px;
+            height: 14px;
+            background-image: url('../images/icons/user-solid.svg');
+            left: 0;
+            top: 0;
+        }
+    }
+    &__title{
+        @extend %rubik-400;
+        font-size: 36px;
+        color: #333333;
+        margin-bottom: 35px;
+    }
+    &__text{
+        line-height: 30px;
+        color: $accent;
+        @extend %rubik-400;
+        margin-bottom: 25px;
+    }
+    &__link{
+        display: inline-block;
+        color: $main;
+        font-size: 15px;
+        border: 1px solid $main;
+        padding: 23px 85px 23px 15px;
+        position: relative;
+        &::after{
+            content: '';
+            position: absolute;
+            width: 22px;
+            height: 9px;
+            background-image: url('../images/icons/right-arrow-blog.svg');
+            top: 28px;
+            right: 18px;
+        }
+    }
+}
+.search-form{
+    display: flex;
+    border: 1px solid #edf1f4;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    margin-bottom: 60px;
+    &__input{
+        display: inline-block;
+        padding: 0 10px;
+        height: 43px;
+        border: none;
+        outline: none;
+    }
+    &__btn{
+        width: 50px;
+        height: 43px;
+        background-color: #edf1f4;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+}
+.blog-aside{
+    width: 270px;
+    &__recent-wrapper{
+        display: flex;
+    }
+    &__img-box{
+        width: 71px;
+        height: 71px;
+        margin-right: 20px;
+    }
+    &__recent-title{
+        margin-bottom: 5px;
+    }
+    &__recent-link{  
+        font-size: 14px;
+        @extend %rubik-400;
+        color: #333333;
+    }
+    &__recent-data{
+        font-size: 12px;
+        text-transform: uppercase;
+        color: #9a9a9a;
+        padding-left: 18px;
+        position: relative;
+        &::before{
+            content: '';
+            position: absolute;
+            width: 12px;
+            height: 14px;
+            background-image: url('../images/icons/calendar-grey.svg');
+            left: 0;
+            top: 0;
+        }
+    }
+}
+
 
 
 @import 'media';
