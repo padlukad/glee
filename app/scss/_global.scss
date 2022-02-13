@@ -93,3 +93,18 @@ body{
     @extend %rubik-400;
     margin-bottom: 25px;
 }
+
+.accent-title{
+    font-size: 36px;
+    color: $accent;
+    @extend %dm-700;
+    margin-bottom: 70px;
+}
+
+.avatar{
+    display: inline-block;
+    width: 76px;
+    height: 76px;
+    object-fit: scale-down;
+    margin-right: 25px;
+}
