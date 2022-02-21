@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact Us</title>
+        <link rel="stylesheet" href="css/contact.min.css">
+    </head>
+    <body>
+
+        {% include 'app/module/_header/_header.html' %}
+
+        <main class="main">
+            <section class="top">
+                <div class="container">
+                    <div class="top__container" style="background-color: #edf1f4;">
+                        <h2 class="top__title">
+                            Contact
+                        </h2>
+                        <div class="breadcrumbs">
+                            <ul class="breadcrumbs__list">
+                                <li class="breadcrumbs__item">
+                                    <a class="breadcrumbs__link" href="#">
+                                        Home
+                                    </a>
+                                </li>
+                                <li class="breadcrumbs__item">
+                                    <span>/</span>
+                                </li>
+                                <li class="breadcrumbs__item">
+                                    <span>Contact</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {% include 'app/module/_contact/_contact.html' %}
+
+            <section class="articles">
+                <div class="container">
+                    <div class="articles__top">
+                        <h3 class="articles__top-title contact-articles__title">
+                            Our Insights & Articles
+                        </h3>
+                        <a class="articles__top-link contact-articles__top-link" href="#">
+                            View All
+                        </a>
+                    </div>
+                    <div class="articles__items">
+                        <div class="articles-item">
+                            <div class="articles-item__img-box">
+                                <img class="articles-item__img" src="images/articles/1.jpg" alt="article image">
+                            </div>
+                            <div class="articles-item__summary">
+                                <div class="articles-item__text">
+                                    <a class="articles-item__link" href="#">
+                                        Diusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+                                    </a>
+                                </div>
+                                <div class="articles-item__info">
+                                    <div class="articles-item__info-date">
+                                        28 JANUARY, 2020
+                                    </div>
+                                    <a class="articles-item__info-author">
+                                        BY ADMIN
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="articles-item">
+                            <div class="articles-item__img-box">
+                                <img class="articles-item__img" src="images/articles/2.jpg" alt="article image">
+                            </div>
+                            <div class="articles-item__summary">
+                                <div class="articles-item__text">
+                                    <a class="articles-item__link" href="#">
+                                        Aonsectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                                    </a>
+                                </div>
+                                <div class="articles-item__info">
+                                    <div class="articles-item__info-date">
+                                        28 JANUARY, 2020
+                                    </div>
+                                    <a class="articles-item__info-author">
+                                        BY ADMIN
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="articles-item">
+                            <div class="articles-item__img-box">
+                                <img class="articles-item__img" src="images/articles/3.jpg" alt="article image">
+                            </div>
+                            <div class="articles-item__summary">
+                                <div class="articles-item__text">
+                                    <a class="articles-item__link" href="#">
+                                        Rncididunt ut labore et dolore magna aliqua. Ut enim
+                                    </a>
+                                </div>
+                                <div class="articles-item__info">
+                                    <div class="articles-item__info-date">
+                                        28 JANUARY, 2020
+                                    </div>
+                                    <a class="articles-item__info-author">
+                                        BY ADMIN
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {% include 'app/module/_partners/_partners.html' %}
+
+        </main>
+
+        {% include 'app/module/_footer/_footer.html' %}
+
+        <script src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap&libraries=&v=weekly" async></script>
+        <script>
+            function initMap() {
+                const uluru = {
+                    lat: 29.755092706876333,
+                    lng: -95.35926875132375
+                };
+                const map = new google.maps.Map(document.getElementById("map"), {
+                    zoom: 9,
+                    center: uluru
+                });
+                const marker = new google.maps.Marker({position: uluru, map: map});
+            }
+        </script>
+        <script src="js/main.min.js"></script>
+    </body>
+</html>

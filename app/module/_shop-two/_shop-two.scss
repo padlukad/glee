@@ -1,0 +1,86 @@
+.pagination__list-two{
+    grid-column: 2;
+    justify-content: flex-start;
+}
+
+.shop-two{
+    padding-bottom: 120px;
+    &__inner{
+        display: grid;
+        grid-template-columns: 270px auto;
+        grid-column-gap: 30px;
+    }
+    &__items{
+        grid-column: 2/3;
+    }
+    &__item{
+        display: flex;
+        margin-bottom: 40px;
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+    &__item-first{
+        .shop-two__content-link{
+            display: inline-block;
+            padding: 20px 50px;
+            background-color: $main;
+            color: #fff;
+            @extend %rubik-400;
+            font-size: 15px;
+        }
+        .shop-two__content-linkbox{
+            display: none;  
+        }
+    }
+    &__item-imgbox{
+        grid-column: 2;
+        min-width: 370px;
+        height: 500px;
+        border: 1px solid #f2f2f2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 30px;
+    }
+    &__item-content{
+        padding-top: 70px;
+        padding-right: 10px;
+    }
+    &__content-text{
+        line-height: 30px;
+        @extend %rubik-400;
+        color: $accent;
+        margin-bottom: 30px;
+        max-height: 90px;
+        overflow: hidden;
+    }
+    &__content-link{
+        display: none;
+    }
+    &__content-linkbox{
+        display: flex;  
+    }
+    &__linkbox-link{
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 10px;
+    }
+    &__linkbox-cart{
+        background-color: $accent;
+        box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
+        path{
+            fill: #fff;
+        }
+    }
+    &__linkbox-heart{
+        background-color: #fff;
+        box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
+        path{
+            fill: $accent;
+        }
+    }
+}

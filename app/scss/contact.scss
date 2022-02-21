@@ -1,0 +1,26 @@
+@import 'vars';
+@import 'fonts';
+@import 'reset';
+@import 'global';
+@import '../module/_header/header';
+@import '../module/_footer/footer';
+@import '../module/_articles/articles';
+@import '../module/_partners/partners';
+@import '../module/_contact/contact';
+
+.contact-articles__title,
+.contact-articles__top-link{
+    color: #436372;
+}
+.contact-articles__top-link{
+    position: relative;
+}
+.contact-articles__top-link::after{
+    content: '';
+    position: absolute;
+    width: 7px;
+    height: 12px;
+    right: 0;
+    bottom: 4px;
+    background-image: url('../images/icons/right-angle-blue.svg');
+}

@@ -1,0 +1,27 @@
+.related{
+    margin-bottom: 120px;
+    .slick-prev,
+    .slick-next{
+        background-color: transparent;
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid $main;
+        border-radius: 5px;
+        cursor: pointer;
+        top: -115px;
+    }
+    .slick-prev{
+        right: 70px;
+    }
+    .slick-next{
+        right: 0;
+    }
+    .slick-prev.slick-disabled,
+    .slick-next.slick-disabled{
+        border: 1px solid #edf1f4;
+    }
+}
