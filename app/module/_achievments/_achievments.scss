@@ -1,0 +1,52 @@
+.achievments{
+    padding: 85px 0 80px;
+    background-color: #fcd7b6;
+    &__list{
+        display: flex;
+        justify-content: space-around;
+    }
+    &__item{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    &__img-box{       
+        padding: 0 32px;
+        position: relative; 
+        &::before{
+            content:'';
+            position: absolute;
+            width: 32px;
+            height: 32px;
+            background-color: $main;
+            border-radius: 50%;
+            opacity: 0.5;  
+            right: 20px;
+            bottom: -5px;           
+        }  
+    } 
+    &__img-delivery::before{
+        right: 25px;
+        bottom: -10px;
+    }
+    &__img-timephone::before{
+        right: 25px;
+        bottom: 0;
+    }
+    &__img-ribbon::before{
+        right: 25px;
+        bottom: 0;
+    }
+    &__number{
+        @extend %dm-700;
+        font-size: 36px;
+        color: $accent;
+        margin: 25px 0;
+    }
+    &__text{
+        @extend %dm-700;
+        font-size: 18px;
+        color: $accent;
+    }
+}

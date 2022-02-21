@@ -1,0 +1,31 @@
+@import 'vars';
+@import 'fonts';
+@import 'reset';
+@import 'global';
+@import '../module/_header/header';
+@import '../module/_footer/footer';
+@import '../module/_top-slider/top-slider';
+@import '../module/_products/products';
+@import '../module/_light/light';
+@import '../module/_new-design/new-design';
+@import '../module/_articles/articles';
+@import '../module/_partners/partners';
+@import '../../node_modules/slick-carousel/slick/slick.scss';
+@import '../../node_modules/@fancyapps/ui/dist/fancybox';
+
+.video{
+    margin-bottom: 115px;
+    &__popup{
+        padding: 187px 0 186px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__play{
+        display: inline-block;
+        padding: 23px;
+        border-radius: 50%;
+        background-color: $main;
+        box-shadow: 0px 0px 0px 13px rgba(163, 187, 200, 0.4)
+    }      
+}
