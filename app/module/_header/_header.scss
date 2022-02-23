@@ -67,7 +67,6 @@
         background-color: #fde7d3;
         right: 0;
         top: -10px;
-        z-index: 99999999;
     }
    
     &__matrix{
@@ -76,6 +75,11 @@
         border-radius: 50%;
         background-color: $main;
         margin-left: 20px;
+    }
+    &__btn{
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
     }
     &__num-heart,
     &__num-cart{

@@ -50,6 +50,7 @@
     &__numbers{
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
     }
     &__number-item{
         padding: 0 20px 0 70px;
@@ -94,5 +95,65 @@
     &__number-text{
         color: #4c4c4c;
         @extend %dm-700;
+    }
+}
+
+@media (max-width: 1250px){
+    .mission{
+        &__inner{
+            padding: 0;
+        }
+    }
+}
+
+@media (max-width: 1100px){
+    .mission{
+        &__wrapper{
+            display: block;
+        }
+        &__img{
+            display: none;
+        }
+        &__inner{
+            width: 100%;
+        }
+        &__inner-title {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        &__time{
+            justify-content: center;
+        }
+    }
+}
+
+@media (max-width: 600px){
+    .mission{
+        padding-bottom: 60px;
+        &__inner-text{
+            padding-bottom: 20px;
+        }
+        &__number-item{
+            margin-bottom: 20px;
+        }
+    }
+}
+
+@media (max-width: 500px){
+    .mission{
+        &__inner-title{
+            font-size: 28px;
+        }
+    }
+}
+
+@media (max-width: 400px){
+    .mission{
+        &__numbers{
+            display: block;
+        }
+        &__number-item{
+            border: none;
+        }
     }
 }

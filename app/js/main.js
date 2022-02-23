@@ -1,5 +1,14 @@
 $(function() {
 
+    // $('.user-nav__btn').on('click', function(){
+    //     $('.shop').toggleClass('shop--active');
+    //     $('.shop-two').toggleClass('shop-two--active')
+    // });
+
+    $('.shop__filter-btn').on('click', function(){
+        $('.shop__filters').slideToggle();
+    });
+
     $('.menu__btn').on('click', function(){
         $('.menu__list').toggleClass('menu__list--active');
     });

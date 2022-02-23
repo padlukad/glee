@@ -111,7 +111,8 @@
         height: 43px;
         background-color: #edf1f4;
         border: none;
-        border-radius: 3px;
+        border-top-left-radius: 3px;
+        border-bottom-left-radius: 3px;
         cursor: pointer;
     }
 }
@@ -148,6 +149,65 @@
             background-image: url('../images/icons/calendar-grey.svg');
             left: 0;
             top: 0;
+        }
+    }
+}
+
+@media (max-width: 1250px){
+    .blog{
+        &__wrapper{
+            flex-direction: column;
+        }
+    }
+    .blog-item{
+        &__img-box{
+            max-width: 100%;
+            width: 100%;
+        }
+        &__img{
+            max-width: 100%;
+            object-fit: cover;
+        }
+    }
+    .blog-aside{
+        margin-left: 0;
+        order: -1;
+        width: 100%;
+        &__recent,
+        .filter-category{
+            display: none;
+        }
+    }
+    .search-form{
+        margin-bottom: 30px;
+        justify-content: space-between;
+        &__input{
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: 700px){
+    .blog-item{
+        &__img-box{
+            height: 270px;
+        }      
+    }
+}
+
+@media (max-width: 600px){
+    .blog{
+        padding-bottom: 60px;
+    }
+}
+
+@media (max-width: 350px){
+    .blog-item{
+        &__title{
+            font-size: 30px;
+        }
+        &__img-info{
+            width: 273px;
         }
     }
 }
