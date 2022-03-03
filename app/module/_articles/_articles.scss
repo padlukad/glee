@@ -99,26 +99,15 @@
     .articles{
         background-image: none;
         &__items{
-            grid-template-columns: repeat(2, 1fr);
-        }
-    }
-    .articles-item{
-        margin: 0 auto;
-        &__summary{
-            background-image: url('../images/articles-bg.jpg');
-            background-repeat: no-repeat;
-        }
-    }
-}
-
-@media (max-width: 820px){
-    .articles{
-        &__items{
             display: block;
         }
     }
     .articles-item{
-        margin-bottom: 20px;
+        margin: 0 auto 20px;
+        &__summary{
+            background-image: url('../images/articles-bg.jpg');
+            background-repeat: no-repeat;
+        }
     }
 }
 

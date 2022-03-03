@@ -50,7 +50,15 @@ $(function() {
         asNavFor: '.product-slider__thumb',
         draggable: false,
         arrows: false,
-        fade: true
+        fade: true,
+        responsive: [
+            {
+              breakpoint: 1051,
+              settings: {
+                draggable: true
+              }
+            }
+          ]
     });
 
     $(".filter-price__input").ionRangeSlider({
