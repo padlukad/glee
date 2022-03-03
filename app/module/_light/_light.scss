@@ -52,3 +52,42 @@
         }
     }
 }
+
+@media (max-width: 1300px){
+    .light{
+        padding-bottom: 30px;
+        &__items{
+            display: block;
+        }
+    }
+    .light-item{
+        margin-bottom: 30px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 15px;
+        &__img-box{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+
+@media (max-width: 600px){
+    .light-item{
+        display: block;
+        padding: 30px 0;
+        &__inner{
+            margin: 0 auto;
+            padding: 0 10px;
+            max-width: 300px;
+            width: 100%;
+        }
+        &__text{
+            word-wrap: break-word;
+        }
+        &__img{
+            display: none;
+        }
+    }
+}

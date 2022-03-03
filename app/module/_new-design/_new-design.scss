@@ -3,13 +3,12 @@
     &__items{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-column-gap: 30px;
+        grid-gap: 30px;
     }
     &__item{
         padding: 40px 35px;
         width: 370px;
         height: 245px;
-        margin-bottom: 30px;
     }
     &__item-link{
         display: inline-block;
@@ -24,5 +23,51 @@
     &__item-category{
         color: $main;
         @extend %dm-700;
+    }
+}
+
+@media (max-width: 1300px){
+    .new-design{
+        &__items{
+            grid-template-columns: repeat(2, 1fr);
+        }
+        &__item{
+            margin: 0 auto;
+            width: 100%;
+            background-repeat: no-repeat;
+            background-color: #f8f8f8;
+            background-size: contain;
+            background-position: center center;
+        }
+    }
+
+}
+
+@media (max-width: 820px){
+    .new-design{
+        padding-bottom: 60px;
+        &__items{
+            display: block;
+        }
+        &__item{
+            margin-bottom: 30px;
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+@media (max-width: 420px){
+    .new-design{
+        &__item{
+            background-image: none !important;
+            background-color: #f8f8f8;
+            max-width: 320px;
+            width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+            text-align: center;
+        }
     }
 }

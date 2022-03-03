@@ -259,3 +259,66 @@
 .comment-reply{
     display: none;
 }
+
+@media (max-width: 1250px){
+    .blog-page{
+        &__inner{
+            flex-direction: column;
+        }
+    }
+}
+
+@media (max-width: 600px){
+    .blog-page{
+        padding-bottom: 60px;
+    }
+
+}
+
+@media (max-width: 500px){
+    .blog-page{
+        &__content-author{
+            margin: 40px 0 20px;
+        }
+        &__form-inputs{
+            display: block;
+        }
+        &__form-input{
+            max-width: 100%;
+        }
+        &__input-name{
+            margin-bottom: 15px;
+        }
+        .avatar{
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 420px){
+    .blog-page{
+       &__content-author{
+           flex-direction: column;
+           align-items: center;
+       }
+       &__author-info{
+           flex-direction: row;
+           align-items: center;
+           margin-bottom: 30px;
+       }
+       &__author-name{
+           margin: 0;
+       }
+       &__author-position{
+           margin-left: 20px;
+       }
+    }
+    .comments{
+        &__info{
+            display: block;
+        }
+        &__author{
+            margin-bottom: 10px;
+        }
+    }
+}

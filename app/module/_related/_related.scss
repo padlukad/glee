@@ -25,3 +25,22 @@
         border: 1px solid #edf1f4;
     }
 }
+
+@media (max-width: 600px){
+    .related{
+        &__title{
+            margin-bottom: 70px;
+        }
+        margin-bottom: 60px;
+        &__slider{
+            .slick-prev,
+            .slick-next{
+                top: -60px;
+            }
+            .slick-prev{
+                left: 0;
+            }
+        }
+      
+    }
+}

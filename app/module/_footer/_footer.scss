@@ -2,7 +2,11 @@
     padding: 80px 0;
     display: flex;
     justify-content: space-between;
-    border-bottom: 1px solid #dae4e9;
+    border-bottom: 1px solid #dae4e9;       
+    flex-wrap: wrap;
+    &__item{
+        padding-left: 10px;
+    }
     &__contact{
         max-width: 200px;
     }
@@ -75,5 +79,52 @@
     }
     span{
         margin: 0 18px;
+    }
+}
+
+@media (max-width: 820px){
+    .footer-top{
+        padding: 60px 0;
+    }
+}
+@media (max-width: 700px){   
+    .footer-bottom{
+        display: block;
+        text-align: center;
+    }
+}
+
+@media (max-width: 500px){   
+    .footer-top{
+        display: block;
+        text-align: center;
+        &__contact{
+            text-align: left;
+        }
+    }
+}
+
+@media (max-width: 350px){
+    .footer-top{
+        &__form{
+            display: block;
+            width: 100%;
+        }
+        &__form-input{
+            width: 100%;
+        }
+        &__btn{
+            
+            width: 100%;
+            margin-left: 0;
+        }
+    }
+    .footer-bottom{
+        &__copy{
+            font-size: 12px;
+        }
+        span{
+            margin: 0 10px;
+        }
     }
 }
